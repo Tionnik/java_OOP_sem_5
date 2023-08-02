@@ -1,19 +1,22 @@
-package java_sem_5.model.data;
+package java_OOP_sem_5.model.data;
 
 import java.util.Calendar;
 
 public class Student extends User{
-    private static int id;
+    private static int id = 1;
     private String group;
     private String speciality;
     private double averageMark;
     public Student( String name, String lastName, Calendar birthday, String group, String speciality,
             double averageMark) {
         super(name, lastName, birthday);
-
+        this.id = id++;
         this.group = group;
         this.speciality = speciality;
         this.averageMark = averageMark;
+    }
+    public static int getId() {
+        return id;
     }
     public String getGroup() {
         return group;

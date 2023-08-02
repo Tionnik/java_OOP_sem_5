@@ -1,4 +1,4 @@
-package java_sem_5.model.data;
+package java_OOP_sem_5.model.data;
 
 import java.util.ArrayList;
 import java.util.Calendar;
