@@ -37,7 +37,7 @@ public class Student extends User{
 
     @Override
     public String toString(){
-            return "Студент: Имя: " + getName() + "  Фамилия: " + getLastName() + " Группа: " + group + " Оценка: " + averageMark;
+            return "Студент:  Имя: " + getName() + "  Фамилия: " + getLastName() + "  Группа: " + group + "  Оценка: " + averageMark+"\n";
     }
 
 }

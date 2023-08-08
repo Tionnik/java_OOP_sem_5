@@ -6,11 +6,13 @@ import java.util.Calendar;
 public class Teacher extends User{
      
     private ArrayList <String> disciplines;
+    private static int id = 1;
     private double rating;
     private String department;
-    public Teacher(int id, String name, String lastName, Calendar birthday, ArrayList <String> disciplines, double rating,
+    public Teacher(String name, String lastName, Calendar birthday, ArrayList <String> disciplines, double rating,
             String department) {
-        super(id, name, lastName, birthday);
+        super(name, lastName, birthday);
+        this.id = id++;
         this.disciplines = disciplines;
         this.rating = rating;
         this.department = department;
@@ -29,7 +31,7 @@ public class Teacher extends User{
     }
     @Override
     public String toString(){
-            return "Преподаватель: Имя: " + getName() + "  Фамилия: " + getLastName() + " Дисциплины: " + disciplines + " Рейтинг: " + rating;
+            return "Преподаватель:  Имя: " + getName() + "  Фамилия: " + getLastName() + "  Дисциплины: " + disciplines + "  Рейтинг: " + rating+"\n";
     }
 
     
